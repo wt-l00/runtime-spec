@@ -320,6 +320,8 @@ type LinuxCPU struct {
 	Quota *int64 `json:"quota,omitempty"`
 	// CPU period to be used for hardcapping (in usecs).
 	Period *uint64 `json:"period,omitempty"`
+	// CPU borrowing to be used for borrowing runtime (in usecs).
+	Borrowing *int64 `json:"borrowing,omitempty"`
 	// How much time realtime scheduling may use (in usecs).
 	RealtimeRuntime *int64 `json:"realtimeRuntime,omitempty"`
 	// CPU period to be used for realtime scheduling (in usecs).
